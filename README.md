@@ -121,3 +121,16 @@ You can combine/chain pipes
 `<p>New York: {{ currentTemperaturs.newYork | number:'1.1-2' | temp:'fah':'cel' }}</p>`
 
 You can use pipes wherever you want in template
+
+<hr>
+
+```
+
+@Pipe({
+  name: 'sort',
+  standalone: true,
+  pure: false,
+})
+```
+
+pure - disables caching mechanism
