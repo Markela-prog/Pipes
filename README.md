@@ -115,3 +115,7 @@ export class TemperaturePipe implements PipeTransform {
 in template:
 
 `<p>New York: {{ currentTemperaturs.newYork | temp:'cel':'fah' }}</p>`
+
+You can combine/chain pipes
+
+`<p>New York: {{ currentTemperaturs.newYork | number:'1.1-2' | temp:'fah':'cel' }}</p>`
